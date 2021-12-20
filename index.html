@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#1a324c">
+        <meta name="msapplication-navbutton-color" content="#1a324c">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="description" content="Jemima Abu is a self-taught Front End Developer and school-taught Systems Engineer from Lagos, Nigeria.">
+        <link rel="stylesheet" href="static/css/main.css">
+        <link rel="stylesheet" href="static/css/index.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicon/apple-touch-icon.png">
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="static/images/favicon/favicon-32x32.png"
+        >
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="static/images/favicon/favicon-16x16.png"
+        >
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!-- Google fonts -->
+        <style>
+      /* cyrillic-ext */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      /* cyrillic */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      /* greek-ext */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+1F00-1FFF;
+      }
+
+      /* greek */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0370-03FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+          format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* cyrillic-ext */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      /* cyrillic */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      /* greek-ext */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+1F00-1FFF;
+      }
+
+      /* greek */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0370-03FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+          format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* cyrillic-ext */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      /* cyrillic */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      /* greek-ext */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+1F00-1FFF;
+      }
+
+      /* greek */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0370-03FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+          format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* cyrillic-ext */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      /* cyrillic */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      /* greek-ext */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+1F00-1FFF;
+      }
+
+      /* greek */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0370-03FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+          format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* cyrillic-ext */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      /* cyrillic */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      /* greek-ext */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+1F00-1FFF;
+      }
+
+      /* greek */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0370-03FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+          format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* cyrillic-ext */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      /* cyrillic */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      /* greek-ext */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+1F00-1FFF;
+      }
+
+      /* greek */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0370-03FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+          format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* cyrillic-ext */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+
+      /* cyrillic */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+
+      /* greek-ext */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+1F00-1FFF;
+      }
+
+      /* greek */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0370-03FF;
+      }
+
+      /* vietnamese */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+
+      /* latin-ext */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2)
+          format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+
+      /* latin */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2)
+          format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+        </style>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3FM96129M"></script>
+        <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-Y3FM96129M');
+        </script>
+        <script src="https://kit.fontawesome.com/5e8cc50381.js" crossorigin="anonymous"></script>
+        <title>Zeeshan Haider Shaheen: Front-End Engineer</title>
+    </head>
+    <body>
+        <header>
+            <div class="fixed-header animate-background">
+                <div class="container header-container">
+                    <div class="logo-container">
+                        <span class="logo animate-logo">Zeeshan Haider Shaheen</span>
+                    </div>
+                    <div class="header-text">
+                        <h1>
+                            <p class="animate-text-1">Front-End Engineer</p>
+                            <p class="animate-text-2">
+                                UI UX Designer, Technical Content Writer
+                            </p>
+                        </h1>
+                    </div>
+                    <h2 class="animate-subtitle">
+                        I am a Front-End Engineer with a passion for UI/UX Design and Technical Content Writing.
+                    </h2>
+                    <div class="scroll-button animate-scroll" tabindex="0">
+                        <div class="arrow">↓</div>
+                        scroll
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div class="container">
+                <a href="/" class="nav-logo" title="Back to Homepage">
+                    Zeeshan Haider Shaheen
+                </a>
+                <div class="nav-links">
+                    <a href="#about" class="link">about</a>
+                    <a href="#projects" class="link">projects</a>
+                    <a href="#articles" class="link">articles</a>
+                    <a href="#contact" class="link">contact</a>
+                    <!-- <div class="social-media">
+                        <a href="https://www.github.com/jemimaabu" title="Github">
+                            <i class="demo-icon icon-github-circled"></i>
+                        </a>
+                        <a href="https://www.twitter.com/jemimaabu" title="Twitter">
+                            <i class="demo-icon icon-twitter"></i>
+                        </a>
+                        <a href="https://jemimaabu.medium.com" title="Medium">
+                            <i class="demo-icon icon-medium"></i>
+                        </a>
+                        <a href="https://codepen.io/jemimaabu" title="Codepen">
+                            <i class="demo-icon icon-codeopen"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jemimaabu" title="LinkedIn">
+                            <i class="demo-icon icon-linkedin"></i>
+                        </a>
+                    </div> -->
+                </div>
+                <!-- <div class="nav-controls">
+                    <button id="menu-display" title="Show Menu" class="hamburger"></button>
+                    <button id="theme-display" title="Select a color scheme" class="control">
+                        <i class="demo-icon icon-cog"></i>
+                    </button>
+                </div>
+                <div class="theme-container">
+                    <button
+                        class="light theme-select"
+                        id="light-select"
+                        onclick="setTheme('light')"
+                        aria-label="Set light theme"
+                    >
+                        <div class="theme-label">Light</div>
+                        <div class="theme">
+                            <div class="color background"></div>
+                            <div class="color shade-100"></div>
+                            <div class="color shade-300"></div>
+                            <div class="color shade-500"></div>
+                            <div class="color text"></div>
+                        </div>
+                    </button>
+                    <button
+                        class="dark theme-select"
+                        id="dark-select"
+                        onclick="setTheme('dark')"
+                        onkeydown="(e) => setThemeKey(e, 'dark')"
+                        aria-label="Set dark theme"
+                    >
+                        <div class="theme-label">Dark</div>
+                        <div class="theme">
+                            <div class="color background"></div>
+                            <div class="color shade-100"></div>
+                            <div class="color shade-300"></div>
+                            <div class="color shade-500"></div>
+                            <div class="color text"></div>
+                        </div>
+                    </button>
+                    <button
+                        class="brown theme-select"
+                        id="brown-select"
+                        onclick="setTheme('brown')"
+                        aria-label="Set brown theme"
+                    >
+                        <div class="theme-label">Brown</div>
+                        <div class="theme">
+                            <div class="color background"></div>
+                            <div class="color shade-100"></div>
+                            <div class="color shade-300"></div>
+                            <div class="color shade-500"></div>
+                            <div class="color text"></div>
+                        </div>
+                    </button>
+                    <button
+                        class="green theme-select"
+                        id="green-select"
+                        onclick="setTheme('green')"
+                        aria-label="Set green theme"
+                    >
+                        <div class="theme-label">Green</div>
+                        <div class="theme">
+                            <div class="color background"></div>
+                            <div class="color shade-100"></div>
+                            <div class="color shade-300"></div>
+                            <div class="color shade-500"></div>
+                            <div class="color text"></div>
+                        </div>
+                    </button>
+                    <button
+                        class="pink theme-select"
+                        id="pink-select"
+                        onclick="setTheme('pink')"
+                        aria-label="Set pink theme"
+                    >
+                        <div class="theme-label">Pink</div>
+                        <div class="theme">
+                            <div class="color background"></div>
+                            <div class="color shade-100"></div>
+                            <div class="color shade-300"></div>
+                            <div class="color shade-500"></div>
+                            <div class="color text"></div>
+                        </div>
+                    </button>
+                    <button
+                        class="neon theme-select"
+                        id="neon-select"
+                        onclick="setTheme('neon')"
+                        aria-label="Set pink theme"
+                    >
+                        <div class="theme-label">Neon</div>
+                        <div class="theme">
+                            <div class="color background"></div>
+                            <div class="color shade-100"></div>
+                            <div class="color shade-300"></div>
+                            <div class="color shade-500"></div>
+                            <div class="color text"></div>
+                        </div>
+                    </button>
+                </div> -->
+            </div>
+        </nav>
+        <main>
+            <section id="about">
+                <div class="container inner-container">
+                    <div class="intro scroll-in">
+                        <h2 class="section-title">
+                            Hello, I'm Zeeshan Haider Shaheen
+                            <span class="title-icon">&#128578;</span>
+                        </h2>
+                        <div class="section-subtitle">
+                            <p>
+                                I am an experienced Frontend Engineer with experience in building web applications using Reactjs.
+                            </p>
+                            <p>
+                                I also write articles and I have my works published on
+                                <a href="https://dev.to/zeeshanhshaheen" target="_blank" rel="noopener">
+                                    dev.to
+                                </a
+                >
+                                , and
+                                <a href="https://zeeshanhshaheen.medium.com/" target="_blank" rel="noopener">
+                                    Medium
+                                </a
+                >
+                                .
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="wave-border top">
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%">
+                    <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: var(--shade-100)"></path>
+                    <path class="neon-path" d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98" style="stroke: var(--neon-color); fill: none"></path>
+                </svg>
+            </div>
+            <section id="projects">
+                <div class="container">
+                    <div class="title-container scroll-in">
+                        <h2 class="section-title">
+                            Featured Projects
+                            <span class="title-icon">&#128187;</span>
+                        </h2>
+                        <p class="section-subtitle">
+                            I do most of my work under contract but I tend to freelance from
+              time to time or build projects for fun. Here are some of my most
+              recent commercial projects:
+                        </p>
+                    </div>
+                    <div class="project-container">
+                        <div class="project scroll-in">
+                            <div class="project-image">
+                                <img
+                                    src="./static/images/skanmi.png"
+                                    width="720"
+                                    height="340"
+                                    alt="Trainella yoga website"
+                                >
+                            </div>
+                            <div class="project-content-container">
+                                <div class="project-content">
+                                    <h3 class="project-title">
+                                        <a href="https://skanmi.com" target="_blank" rel="noopener">
+                                            Skanmi
+                                        </a>
+                                    </h3>
+                                    <div class="project-description">
+                                        <p>
+                                            Skanmi is a food ordering application with from Sweden with exciting features like Group ordering, Buffet order, menu Order, deals order,order tracking, buffet tracking, guest login, swish and bambora payment integrations. I did the Front-emd of the project.
+                                        </p>
+                                        <!-- <p>
+                    One Sunday in June, I attended a free yoga class that I saw online. After the class, I got to
+                    talking
+                    with the instructor and, when I mentioned that I was a web developer, she was like "What a
+                    coincidence, I've been meaning to develop a website for my yoga classes."
+                  </p>
+                  <p>
+                    Never one to look Serendipity in the mouth, I was like "Yeah sure I can do that". The catch was: she
+                    wanted a WordPress site and I'd never actually built a WordPress site from scratch before.
+                  </p>
+                  <p>
+                    After a lot of research and bumbling and mistaking wordpress.com for wordpress.org, I finally
+                    managed
+                    to set up the site with a WordPress theme that I tweaked with about 500 lines of additional CSS to
+                    create a webpage we were both happy with.
+                  </p> -->
+                                    </div>
+                                    <ul class="project-tags" title="Technologies used">
+                                        <li class="tag">React js</li>
+                                        <li class="tag">Redux Thunk</li>
+                                        <li class="tag">Material UI</li>
+                                        <li class="tag">Pusher</li>
+                                    </ul>
+                                    <div class="project-links">
+                                        <a
+                                            href="https://skanmi.com"
+                                            target="_blank"
+                                            rel="noopener"
+                                            class="link-btn"
+                                        >
+                                            visit site
+                                        </a
+                    >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project scroll-in">
+                            <div class="project-image">
+                                <img
+                                    src="./static/images/xclusiveme.png"
+                                    width="720"
+                                    height="340"
+                                    alt="UNILAG Consult Cybercamp Website"
+                                >
+                            </div>
+                            <div class="project-content-container">
+                                <div class="project-content">
+                                    <h3 class="project-title">
+                                        <a href="#" target="_blank" rel="noopener">
+                                            Xclusiveme
+                                        </a>
+                                    </h3>
+                                    <div class="project-description">
+                                        <p>
+                                            Xclusiveme is a social media platform and one of my favourite projects. It allows user to share ideas by creatig posts with paid(optional) media [image, video, audio] attached. It also allows users to comment on posts and like posts, to purchase posts, add tip etc.
+                                        </p>
+                                        <!-- <p>
+                    The inspiration behind the design was something along the lines of: provide as much information as
+                    possible and be easy to navigate so we stuck to a basic layout with minimal animations.
+                  </p> -->
+                                    </div>
+                                    <ul class="project-tags">
+                                        <li class="tag">ResctJs</li>
+                                        <li class="tag">Redux Saga</li>
+                                        <li class="tag">Material UI</li>
+                                        <li class="tag">Sockets</li>
+                                    </ul>
+                                    <div class="project-links">
+                                        <a
+                                            href="#"
+                                            target="_blank"
+                                            rel="noopener"
+                                            class="link-btn"
+                                        >
+                                            Visit Site
+                                        </a
+                    >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project scroll-in">
+                            <div class="project-image">
+                                <img
+                                    src="./static/images/vtc.png"
+                                    width="720"
+                                    height="340"
+                                    alt=""
+                                >
+                            </div>
+                            <div class="project-content-container">
+                                <div class="project-content">
+                                    <h3 class="project-title">
+                                        <a href="https://vitaltransportationcorp.com" target="_blank" rel="noopener">
+                                            Vital Transportation
+                                        </a>
+                                    </h3>
+                                    <div class="project-description">
+                                        <p>
+                                            Vital Transportation is a Logistics applications that provides Transport Solutions.
+                                        </p>
+                                        <!-- <p>
+                    Some of my favorite implemented features include the smart navigation (the menu only appears when
+                    you
+                    move up the page) and the theme selector (why choose one color scheme when you can have five).</li>
+                  </p>
+                  <p>
+                    I also took user preferences into consideration (dark mode and
+                    reduced animation is set according to the user's system settings) and provided content for browsers
+                    with disabled JavaScript,although the functionality is limited.</p>
+                  <p> I tried to make it as cross-browser compatible as possible it but if you find any errors on your
+                    broswer, please send me a message
+                    in the contact form and I'll work on it.
+                  </p> -->
+                                    </div>
+                                    <ul class="project-tags">
+                                        <li class="tag">Wordprerss</li>
+                                    </ul>
+                                    <div class="project-links">
+                                        <a
+                                            href="https://vitaltransportationcorp.com/"
+                                            target="_blank"
+                                            rel="noopener"
+                                            class="link-btn"
+                                        >
+                                            Visit Site
+                                        </a
+                    >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-link scroll-in">
+                        <a href="https://github.com/zeeshanhshaheen" target="_blank" class="link-btn">View All Projects</a>
+                    </div>
+                </div>
+            </section>
+            <div class="wave-border bottom">
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%">
+                    <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: var(--shade-100)"></path>
+                    <path class="neon-path" d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98" style="stroke: var(--neon-color); fill: none"></path>
+                </svg>
+            </div>
+            <!-- <section id="talks">
+                <div class="container">
+                    <div class="title-container scroll-in">
+                        <h2 class="section-title">
+                            Featured Talks
+                            <span class="title-icon">&#127908;</span>
+                        </h2>
+                        <p class="section-subtitle">
+                            I like to speak at tech conferences on a variety of topics ranging
+              from web accessibility to career development. Here are videos from
+              my past talks:
+                        </p>
+                    </div>
+                    <div class="talks-container">
+                        <div class="card scroll-in">
+                            <div class="card-image">
+                                <a
+                                    href="https://www.youtube.com/watch?v=lFzWAsA76DU"
+                                    title="Accessible.JS - Jemima Abu - CityJS Conf 2020"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <img
+                                        src="./static/images/talks/accessible-js.jpeg"
+                                        alt="Accessible.JS - Jemima Abu - CityJS Conf 2020"
+                                        width="480"
+                                        height="360"
+                                    >
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Accessible.JS</h3>
+                                <div class="card-description">
+                                    <p>CityJS Conf 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card scroll-in">
+                            <div class="card-image">
+                                <a
+                                    href="https://www.youtube.com/watch?v=QSXdTuD9Rak"
+                                    title="Understanding Accessibility as a Concept | Jemima Abu | CascadiaJS 2020"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <img
+                                        src="./static/images/talks/understanding-accessibility.jpeg"
+                                        alt="Understanding Accessibility as a Concept | Jemima Abu | CascadiaJS 2020"
+                                        width="480"
+                                        height="360"
+                                    >
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">
+                                    Understanding Accessibility as a Concept
+                                </h3>
+                                <div class="card-description">
+                                    <p>CascadiaJS 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card scroll-in">
+                            <div class="card-image">
+                                <a
+                                    href="https://www.youtube.com/watch?v=a0CmIEH44vg"
+                                    title="Jemima Abu - State Management for React Applications at React Live Conference Online"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <img
+                                        src="./static/images/talks/state-management.jpeg"
+                                        alt="Jemima Abu - State Management for React Applications at React Live Conference Online"
+                                        width="480"
+                                        height="360"
+                                    >
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">
+                                    State Management for React Applications
+                                </h3>
+                                <div class="card-description">
+                                    <p>React Live Conference Online</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card scroll-in">
+                            <div class="card-image">
+                                <a
+                                    href="https://www.youtube.com/watch?v=TEvxRKd2suc"
+                                    title="Redux Middleware for React Applications by Jemima Abu from  Telesoftas  at 84th Devclub.lv"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <img
+                                        src="./static/images/talks/redux-middleware.jpeg"
+                                        alt="Redux Middleware for React Applications by Jemima Abu from  Telesoftas  at 84th Devclub.lv"
+                                        width="480"
+                                        height="360"
+                                    >
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">
+                                    Redux Middleware for React Applications
+                                </h3>
+                                <div class="card-description">
+                                    <p>84th Devclub.lv</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card scroll-in">
+                            <div class="card-image">
+                                <a
+                                    href="https://www.youtube.com/watch?v=YGPxUK5Ksuw"
+                                    title="Defining A Career Path in Technology - Jemima Abu - Women Tech Network"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <img
+                                        src="./static/images/talks/tech-career.jpeg"
+                                        alt="Defining A Career Path in Technology - Jemima Abu - Women Tech Network"
+                                        width="480"
+                                        height="360"
+                                    >
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Defining A Career Path in Technology</h3>
+                                <div class="card-description">
+                                    <p>Women Tech Network</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card scroll-in">
+                            <div class="card-image">
+                                <a
+                                    href="https://www.youtube.com/watch?v=11NNrrbKKgU"
+                                    title="React Components and How To Style Them - Jemima Abu - React Summit 2020"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    <img
+                                        src="./static/images/talks/react-style.jpeg"
+                                        alt="React Components and How To Style Them - Jemima Abu - React Summit 2020"
+                                        width="480"
+                                        height="360"
+                                    >
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="card-title">
+                                    React Components and How To Style Them
+                                </h3>
+                                <div class="card-description">
+                                    <p>React Summit 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-link scroll-in">
+                        <a href="talks" class="link-btn">View All Talks</a>
+                    </div>
+                </div>
+            </section> -->
+            <!-- <div class="wave-border top">
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%">
+                    <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: var(--shade-100)"></path>
+                    <path class="neon-path" d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98" style="stroke: var(--neon-color); fill: none"></path>
+                </svg>
+            </div> -->
+            <section id="articles">
+                <div class="container">
+                    <div class="title-container scroll-in">
+                        <h2 class="section-title">
+                            Featured Articles
+                            <span class="title-icon">&#128466;</span>
+                        </h2>
+                        <p class="section-subtitle">
+                            I write the type of articles I would want to read when trying to
+              understand a new concept or develop a skill. Here are some things
+              I've written recently:
+                        </p>
+                    </div>
+                    <div class="articles-container">
+                        <div class="article scroll-in">
+                            <div class="article-image">
+                                <a href="https://dev.to/zeeshanhshaheen/roadmap-to-learn-and-practice-html-css-javascript-in-6-weeks-27l4" target="_blank" rel="noopener">
+                                    <img src="https://images.unsplash.com/photo-1590402494587-44b71d7772f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+                                </a>
+                            </div>
+                            <div class="article-content">
+                                <div class="article-site">
+                                    <a href="https://dev.to/zeeshanhshaheen/roadmap-to-learn-and-practice-html-css-javascript-in-6-weeks-27l4" target="_blank" rel="noopener">
+                                        dev.to
+                                    </a
+                  >
+                                </div>
+                                <h3 class="article-title">
+                                    <a href="https://dev.to/zeeshanhshaheen/roadmap-to-learn-and-practice-html-css-javascript-in-6-weeks-27l4" target="_blank" rel="noopener">
+                                        Roadmap to learn and practice HTML, CSS & JavaScript in 6 weeks
+                                    </a>
+                                </h3>
+                                <div class="article-description">
+                                    <p>
+                                        It’s never too late to learn code or make a career change in web development. The demand for web developers is high all the time and is still increasing, The best part is that a CS degree is not a prerequisite to get into web development.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article scroll-in">
+                            <div class="article-image">
+                                <a href="https://dev.to/zeeshanhshaheen/design-patterns-in-javascript-1pgm" target="_blank" rel="noopener">
+                                    <img src="https://images.unsplash.com/photo-1488409688217-e6053b1e8f42?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=773&q=80" alt="">
+                                </a>
+                            </div>
+                            <div class="article-content">
+                                <div class="article-site">
+                                    <a href="https://dev.to/zeeshanhshaheen/design-patterns-in-javascript-1pgm" target="_blank" rel="noopener">
+                                        dev.to
+                                    </a
+                  >
+                                </div>
+                                <h3 class="article-title">
+                                    <a href="https://dev.to/zeeshanhshaheen/design-patterns-in-javascript-1pgm" target="_blank" rel="noopener">
+                                        Design Patterns in JavaScript
+                                    </a>
+                                </h3>
+                                <div class="article-description">
+                                    <p>
+                                        20+ Design Patterns explanation in JavaScript
+
+                                        We will discuss implementation of Design Patterns by using JavaScript ES6 classes.
+
+Design Patterns are the solutions to commonly occuring problems in software design. These patterns are easily re-usable and are expressive.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article scroll-in">
+                            <div class="article-image">
+                                <a href="https://dev.to/zeeshanhshaheen/how-to-deploy-react-js-and-nodejs-app-on-a-single-digitalocean-droplet-using-nginx-1pcl" target="_blank" rel="noopener">
+                                    <img src="data:image/png;base64,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" alt="How To Find Conferences To Speak At">
+                                </a>
+                            </div>
+                            <div class="article-content">
+                                <div class="article-site">
+                                    <a href="https://dev.to/zeeshanhshaheen/how-to-deploy-react-js-and-nodejs-app-on-a-single-digitalocean-droplet-using-nginx-1pcl" target="_blank" rel="noopener">
+                                        dev.to
+                                    </a
+                  >
+                                </div>
+                                <h3 class="article-title">
+                                    <a href="https://dev.to/zeeshanhshaheen/how-to-deploy-react-js-and-nodejs-app-on-a-single-digitalocean-droplet-using-nginx-1pcl" target="_blank" rel="noopener">
+                                        How to deploy React JS and Node.js apps on a single DigitalOcean droplet using Nginx
+                                    </a>
+                                </h3>
+                                <div class="article-description">
+                                    <p>
+                                        In this article, we'll learn how to deploy a React JS app using a simple server block and a Node.js app using reverse proxy server blocks, on a single DigitalOcean droplet using Nginx.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-link scroll-in">
+                        <a href="https://dev.to/zeeshanhshaheen" class="link-btn">Read More Articles</a>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="container">
+                    <div class="title-container scroll-in">
+                        <h2 class="section-title">
+                            Let's get in Touch
+                        </h2>
+                        <p class="section-subtitle">
+                            Have some projects ideas to discuss?
+                            <a href="mailto:zeeshanhshaheen@gmail.com">reach me at zeeshanhshaheen@gmail.com</a>
+                        </p>
+                    </div>
+                    <div class="contact-content">
+                        <div class="form-container scroll-in">
+                            <noscript>
+                                This form won't work without JavaScript but you can send me a
+                message on
+                                <a href="https://twitter.com/messages/compose?recipient_id=128661296" style="text-decoration: underline">
+                                    Twitter
+                                </a
+                >
+                                or
+                                <a href="https://www.linkedin.com/in/jemimaabu" style="text-decoration: underline">
+                                    LinkedIn
+                                </a
+                >
+                                .
+                            </noscript
+              >
+                            <p class="success-message"></p>
+                            <form
+                                name="contact"
+                                method="POST"
+                                data-netlify="true"
+                                action="/?success#contact"
+                                style="display: none;"
+                            >
+                                <div class="input-container">
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        required
+                                        class="form-input"
+                                    >
+                                    <label for="name">Name:</label>
+                                </div>
+                                <div class="input-container">
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        required
+                                        class="form-input"
+                                    >
+                                    <label for="email">Email:</label>
+                                </div>
+                                <div class="input-container">
+                                    <input
+                                        type="text"
+                                        id="subject"
+                                        name="subject"
+                                        class="form-input"
+                                    >
+                                    <label for="subject">Subject (optional):</label>
+                                </div>
+                                <div class="input-container">
+                                    <textarea
+                                        required
+                                        maxlength="1000"
+                                        id="message"
+                                        name="message"
+                                        class="form-input"
+                                    ></textarea>
+                                    <label for="message">
+                                        Message:
+                                        <br>
+                                    </label>
+                                    <small>
+                                        <span id="message-count">1000</span>
+                                        characters
+                                    </small>
+                                </div>
+                                <div>
+                                    <button type="submit" class="link-btn">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="social-media">
+                    <a href="https://www.github.com/zeeshanhshaheen" title="Github" target="blank">
+                        <i class="demo-icon icon-github-circled"></i>
+                    </a>
+                    <a href="https://www.twitter.com/zeeshanhshaheen" title="Twitter" target="blank">
+                        <i class="demo-icon icon-twitter"></i>
+                    </a>
+                    <a href="https://zeeshanhshaheen.medium.com" title="Medium">
+                        <i class="demo-icon icon-medium"></i>
+                    </a>
+                    <a href="https://zeeshanhshaheen.medium.com" title="Medium">
+                        <i class="demo-icon fab fa-dev"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/zeeshanhshaheen" title="LinkedIn">
+                        <i class="demo-icon icon-linkedin"></i>
+                    </a>
+                </div>
+                <div class="copyright">
+                    &copy; copyright
+                    <a href="https://twitter.com/zeeshanhshaheen" target="_blank">
+                        zeeshanhshsheen
+                    </a
+          >
+                    <span class="heart">&hearts;</span>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="./static/js/index.js"></script>
+    <script src="./static/js/landing-page.js"></script>
+</html>
